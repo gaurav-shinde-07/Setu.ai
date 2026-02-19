@@ -9,6 +9,7 @@ import FeatureGrid from "../components/FeatureGrid";
 import Results from "../components/Results";
 import Pricing from "../components/Pricing";
 import FinalCTA from "../components/FinalCTA";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
       <Results />
       <Pricing />
       <FinalCTA />
+      <Footer />
     </main>
   );
 }
