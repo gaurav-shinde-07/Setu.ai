@@ -13,7 +13,7 @@ const Hero = () => {
       transition={{ duration: 0.8 }}
       className="heading text-white"
     >
-      Understanding, Not Just Marks.
+      From Ratta to Real Understanding.
     </motion.h1>
 
     <motion.p
