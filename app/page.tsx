@@ -5,6 +5,7 @@ import WhatWeDo from "../components/WhatWeDo";
 import WhoItsFor from "../components/WhoItsFor";
 import HowItWorks from "../components/HowItWorks";
 import Differentiation from "../components/Differentiation";
+import FeatureGrid from "../components/FeatureGrid";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <WhoItsFor />
       <HowItWorks />
       <Differentiation />
+      <FeatureGrid />
     </main>
   );
 }
