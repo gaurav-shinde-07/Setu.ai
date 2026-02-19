@@ -7,6 +7,7 @@ import HowItWorks from "../components/HowItWorks";
 import Differentiation from "../components/Differentiation";
 import FeatureGrid from "../components/FeatureGrid";
 import Results from "../components/Results";
+import Pricing from "../components/Pricing";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <Differentiation />
       <FeatureGrid />
       <Results />
+      <Pricing />
     </main>
   );
 }
