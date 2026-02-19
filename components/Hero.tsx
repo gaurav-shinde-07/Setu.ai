@@ -4,7 +4,8 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <section className="w-full min-h-screen flex flex-col justify-center items-center px-6 md:px-20 text-center bg-[#0B0F14]">
+    <section className="w-full min-h-screen flex flex-col justify-center items-center px-6 md:px-20 text-center bg-[#0B0F14] pt-24">
+
 
       <motion.h1
         initial={{ opacity: 0, y: 40 }}
