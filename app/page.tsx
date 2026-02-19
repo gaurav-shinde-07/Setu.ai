@@ -8,6 +8,7 @@ import Differentiation from "../components/Differentiation";
 import FeatureGrid from "../components/FeatureGrid";
 import Results from "../components/Results";
 import Pricing from "../components/Pricing";
+import FinalCTA from "../components/FinalCTA";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <FeatureGrid />
       <Results />
       <Pricing />
+      <FinalCTA />
     </main>
   );
 }
