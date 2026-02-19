@@ -4,6 +4,7 @@ import Problem from "../components/Problem";
 import WhatWeDo from "../components/WhatWeDo";
 import WhoItsFor from "../components/WhoItsFor";
 import HowItWorks from "../components/HowItWorks";
+import Differentiation from "../components/Differentiation";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <WhatWeDo />
       <WhoItsFor />
       <HowItWorks />
+      <Differentiation />
     </main>
   );
 }
