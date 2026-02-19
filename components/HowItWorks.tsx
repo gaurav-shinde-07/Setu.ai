@@ -2,48 +2,54 @@
 
 import { motion } from "framer-motion";
 
+const steps = [
+  "Diagnostic Assessment",
+  "Personalized Learning Path",
+  "Visual Concept Modules",
+  "Explain-in-Your-Own-Words Validation",
+  "Skill Reinforcement"
+];
+
 const HowItWorks = () => {
   return (
-    <section className="w-full py-20 px-6 md:px-20 bg-[#0B0F14] text-white text-center">
+    <section className="w-full section bg-[#0B0F14] text-white relative overflow-hidden">
 
-      <motion.h2
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        className="text-3xl md:text-4xl font-bold mb-12"
-      >
-        A Structured Learning Loop
-      </motion.h2>
+      {/* Subtle Gradient Glow */}
+      <div className="absolute inset-0 bg-gradient-to-b from-[#10B981]/10 to-transparent pointer-events-none" />
 
-      <div className="grid md:grid-cols-5 gap-6 max-w-6xl mx-auto">
+      <div className="container text-center relative z-10">
 
-        <div className="p-4">
-          <h3 className="text-[#10B981] font-semibold mb-2">Step 1</h3>
-          <p>Diagnostic Assessment</p>
-        </div>
+        <motion.h2
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="heading mb-12"
+        >
+          A Structured Learning Loop
+        </motion.h2>
 
-        <div className="p-4">
-          <h3 className="text-[#10B981] font-semibold mb-2">Step 2</h3>
-          <p>Personalized Learning Path</p>
-        </div>
+        <div className="grid md:grid-cols-5 gap-6 mt-10">
 
-        <div className="p-4">
-          <h3 className="text-[#10B981] font-semibold mb-2">Step 3</h3>
-          <p>Visual Concept Modules</p>
-        </div>
+          {steps.map((step, index) => (
+            <motion.div
+              key={index}
+              whileHover={{ y: -5 }}
+              transition={{ duration: 0.3 }}
+              className="card border border-gray-700 text-center"
+            >
+              <div className="w-10 h-10 mx-auto mb-4 flex items-center justify-center rounded-full bg-[#10B981] text-white font-bold">
+                {index + 1}
+              </div>
 
-        <div className="p-4">
-          <h3 className="text-[#10B981] font-semibold mb-2">Step 4</h3>
-          <p>Explain-in-Your-Own-Words Validation</p>
-        </div>
+              <p className="text-gray-300 text-sm">
+                {step}
+              </p>
+            </motion.div>
+          ))}
 
-        <div className="p-4">
-          <h3 className="text-[#10B981] font-semibold mb-2">Step 5</h3>
-          <p>Skill Reinforcement</p>
         </div>
 
       </div>
-
     </section>
   );
 };
