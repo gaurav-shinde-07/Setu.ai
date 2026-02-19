@@ -4,32 +4,55 @@ import { motion } from "framer-motion";
 
 const Problem = () => {
   return (
-    <section className="w-full py-20 px-6 md:px-20 bg-white text-black text-center">
+    <section className="w-full section bg-white text-black">
+      <div className="container text-center">
 
-      <motion.h2
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        className="text-3xl md:text-4xl font-bold mb-10"
-      >
-        Most Students Study. Few Truly Understand.
-      </motion.h2>
+        <motion.h2
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="heading mb-12"
+        >
+          Most Students Study. Few Truly Understand.
+        </motion.h2>
 
-      <ul className="space-y-4 text-lg text-gray-700 max-w-2xl mx-auto">
-        <li>Memorize definitions without internalizing meaning</li>
-        <li>Score well but forget weeks later</li>
-        <li>Struggle to explain concepts independently</li>
-        <li>Lack confidence in applying knowledge</li>
-      </ul>
+        <div className="grid md:grid-cols-2 gap-6 mt-10">
 
-      <p className="mt-10 text-gray-600 max-w-xl mx-auto">
-        The result? Surface learning. Short-term performance. Long-term gaps.
-        <br /><br />
-        <span className="text-[#10B981] font-semibold">
-          Setu AI transforms passive memorization into active understanding.
-        </span>
-      </p>
+          <div className="card text-left">
+            <p className="text-gray-700">
+              Memorize definitions without internalizing meaning
+            </p>
+          </div>
 
+          <div className="card text-left">
+            <p className="text-gray-700">
+              Score well but forget weeks later
+            </p>
+          </div>
+
+          <div className="card text-left">
+            <p className="text-gray-700">
+              Struggle to explain concepts independently
+            </p>
+          </div>
+
+          <div className="card text-left">
+            <p className="text-gray-700">
+              Lack confidence in applying knowledge
+            </p>
+          </div>
+
+        </div>
+
+        <p className="mt-12 text-gray-600 max-w-xl mx-auto text-lg">
+          The result? Surface learning. Short-term performance. Long-term gaps.
+          <br /><br />
+          <span className="text-[#10B981] font-semibold">
+            Setu AI transforms passive memorization into active understanding.
+          </span>
+        </p>
+
+      </div>
     </section>
   );
 };
